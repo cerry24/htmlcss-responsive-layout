@@ -21,3 +21,43 @@ header {
     background-color: #0084fd;
 }
 
+.cards{
+    padding: 1rem;
+}
+
+.card {
+    width: 100%;
+    height: 250px;
+    background-color: #b5ddff;
+    margin: 2rem 0;
+}
+
+
+
+/* RESPONSIVE */
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card:first-child {
+        width: calc(100% / 3 * 2 - 1rem);
+    }
+
+    .card {
+        width: calc(100% / 3 - 1rem);
+        margin: 0 1rem 1rem 0;
+    }
+
+}
+
+/* desktop */
+@media screen and (min-width: 992px) {
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
