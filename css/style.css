@@ -98,6 +98,20 @@ header {
     background-color: white;
 }
 
+footer {
+    height: 120px;
+    background-color: #333333;
+}
+
+.p,
+.links {
+    width: calc(100% - 2rem);
+    height: 50px;
+    margin: 1rem auto;
+    padding: 1rem 0;
+    background-color: cyan;
+}
+
 
 /* RESPONSIVE */
 
@@ -141,7 +155,9 @@ header {
         flex-basis: 40%;
     }
 
-    #get-started .content {
+    .content,
+    .p,
+    .links {
         width: 80%;
         margin: 0 auto;
     }
@@ -177,7 +193,9 @@ header {
         flex-basis: 30%;
     }
 
-    #get-started .content {
+    .content,
+    .p,
+    .links {
         width: 50%;
         margin: 0 auto;
     }
