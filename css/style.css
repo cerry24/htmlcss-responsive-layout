@@ -28,8 +28,11 @@ header {
 .card {
     width: 100%;
     height: 250px;
-    background-color: #b5ddff;
     margin: 2rem 0;
+}
+
+#introduction .card {
+    background-color: #b5ddff;
 }
 
 #planning  {
@@ -64,6 +67,14 @@ header {
     flex-basis: 80%;
 }
 
+#benefits {
+    background-color: #9792e4;
+}
+
+#benefits .card{
+    background-color: white;
+}
+
 /* RESPONSIVE */
 
 /* tablet */
@@ -71,21 +82,28 @@ header {
     .cards {
         display: flex;
         flex-wrap: wrap;
-    }
-
-    .card:first-child {
-        width: calc(100% / 3 * 2 - 1rem);
+        padding: 1rem 0 1rem 1rem;
     }
 
     .card {
-        width: calc(100% / 3 - 1rem);
         margin: 0 1rem 1rem 0;
+    }
+
+    #introduction .card:first-child {
+        width: calc(100% / 3 * 2 - 1rem);
+    }
+
+    #introduction .card {
+        width: calc(100% / 3 - 1rem);
     }
 
     .testimonial {
         flex-direction: row;
     }
 
+    #benefits .card {
+        width: calc(100% / 2 - 1rem);
+    }
 
 }
 
@@ -104,6 +122,10 @@ header {
 
     .row .col {
         width: 40%;
+    }
+
+    #benefits .card {
+        width: calc(100% / 3 - 1rem);
     }
 
 }
