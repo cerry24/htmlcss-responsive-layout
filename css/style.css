@@ -95,6 +95,7 @@ header {
     height: 600px;
     margin: 1rem auto;
     padding: 3rem 0;
+    background-color: white;
 }
 
 
@@ -140,6 +141,11 @@ header {
         flex-basis: 40%;
     }
 
+    #get-started .content {
+        width: 80%;
+        margin: 0 auto;
+    }
+
 }
 
 /* desktop */
@@ -169,6 +175,11 @@ header {
 
     #about-us .col-right {
         flex-basis: 30%;
+    }
+
+    #get-started .content {
+        width: 50%;
+        margin: 0 auto;
     }
 
 }
