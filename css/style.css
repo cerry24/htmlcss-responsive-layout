@@ -135,8 +135,6 @@ li>a {
 
 #planning .col{
     width: 100%;
-    /* height: 600px; */
-    /* background-color: brown; */
     color: var(--tertiary-accent-color);
     margin: 1rem 0;
 }
@@ -156,8 +154,38 @@ li>a {
 }
 
 #planning .col-right {
-    height: 500px;
+    /* height: 500px; */
+    background-color: var(--tertiary-accent-color);
+    border-radius: 3rem;
     color: black;
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem 0 3rem 0;
+}
+
+#planning h3 {
+    font-size: x-large;
+    margin-top: 1.5rem;
+}
+
+#planning .col-right p {
+    font-style: italic;
+}
+
+.arrow-down {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--main-bg-color);
+    padding: .5rem;
+    margin: 1.5rem;
+}
+
+.fa-solid.fa-arrow-down-long {
+    font-size: 1.5rem;
+    margin-top: .25rem;
 }
 
 .testimonial {
@@ -317,6 +345,10 @@ footer {
 
     #planning .col h2 {
         font-size: 2rem;
+    }
+
+    #planning .col-right img {
+        width: 65%;
     }
 
     #benefits .card {
