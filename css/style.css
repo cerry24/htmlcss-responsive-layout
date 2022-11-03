@@ -188,20 +188,74 @@ li>a {
     margin-top: .25rem;
 }
 
+.text {
+    text-align: center;
+    margin: 3rem 1rem;
+}
+
+.text span {
+    text-transform: uppercase;
+}
+
+.text h2 {
+    font-size: 3rem;
+    color: var(--main-bg-color);
+    margin-top: 1.5rem;
+}
+
+.text p {
+    margin-top: 2rem;
+}
+
 .testimonial {
     flex-direction: column;
     width: calc(100% - 2rem);
-    height: 200px;
+    color: var(--tertiary-accent-color);
     background-color: var(--main-bg-color);
+    border-radius: 3rem;
+    padding: 1rem;
     margin: 1rem auto;
+}
+
+.testimonial:last-child {
+    margin-bottom: 3rem;
 }
 
 .testimonial .col-left {
     flex-basis: 20%;
+    justify-content: center;
+    margin: 1.5rem 0 1rem 0;
+}
+
+.testimonial figure {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.testimonial img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .testimonial .col-right {
     flex-basis: 80%;
+    flex-direction: column;
+}
+
+.testimonial p {
+    width: 100%;
+    text-align: center;
+}
+
+.testimonial-name {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 1rem;
 }
 
 #benefits {
@@ -288,6 +342,18 @@ footer {
     .testimonial {
         flex-direction: row;
     }
+
+    .testimonial .col-right {
+        justify-content: center;
+        padding: 0 2rem;
+    }
+
+    .testimonial p,
+    .testimonial-name {
+        text-align: left;
+    }
+
+
 
     #benefits .card {
         width: calc(100% / 2 - 1rem);
