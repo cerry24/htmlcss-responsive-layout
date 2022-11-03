@@ -226,14 +226,14 @@ li>a {
     margin: 1.5rem 0 1rem 0;
 }
 
-.testimonial figure {
+figure {
     width: 200px;
     height: 200px;
     overflow: hidden;
     border-radius: 50%;
 }
 
-.testimonial img {
+figure img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -292,16 +292,36 @@ li>a {
     margin-top: 1.5rem;
 }
 
-
 #about-us .row {
-    padding: 1rem;
+    padding: 3rem 1rem;
 }
 
 #about-us .col {
     width: 100%;
-    height: 300px;
-    background-color: coral;
     margin: 1rem 0;
+}
+
+#about-us h2 {
+    font-size: 3rem;
+    color: var(--main-bg-color);
+}
+
+#about-us p{
+    margin-top: 2rem;
+}
+
+#about-us .col-right {
+    margin-top: 2rem;
+}
+
+.violet-p {
+    font-size: x-large;
+    font-weight: bold;
+    color: var(--main-bg-color);
+}
+
+#about-us .violet-btn {
+    padding: .5rem 1rem;
 }
 
 #get-started {
@@ -398,6 +418,7 @@ footer {
 
     #about-us .col-right {
         flex-basis: 40%;
+        padding-left: 6rem;
     }
 
     .content,
