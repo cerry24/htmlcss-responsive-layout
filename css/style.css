@@ -4,11 +4,23 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main-accent-color: #0084fd;
+    --secondary-accent-color: #fdc15f;
+    --tertiary-accent-color: white;
+    --main-bg-color: #9792e4;
+    --secondary-bg-color: #b5ddff;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
 .flex {
     display: flex;
 }
 
-.flex-space-between {
+.space-between {
     justify-content: space-between;
 }
 
@@ -18,11 +30,51 @@
 
 header {
     height: 80px;
-    background-color: #0084fd;
+    background-color: var(--main-accent-color);
+}
+
+.logo,
+.navigation-bar {
+    align-items: center;
+}
+
+.logo {
+    padding: 1rem;
+}
+
+.navigation-bar li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 1rem;
+    display: none;
+}
+
+.navigation-bar li:last-child {
+    display: inline-block;
+}
+
+li>a {
+    text-decoration: none;
+    color: var(--tertiary-accent-color);
+}
+
+.btn {
+    border-style: none;
+    border-radius: 5rem;
+}
+
+.white-btn {
+    background-color: white;
+    padding: .5rem;
 }
 
 .cards{
     padding: 1rem;
+}
+
+.fa-solid.fa-bars {
+    font-size: 2rem;
+    color: var(--tertiary-accent-color);
 }
 
 .card {
@@ -32,11 +84,11 @@ header {
 }
 
 #introduction .card {
-    background-color: #b5ddff;
+    background-color: var(--secondary-bg-color);
 }
 
 #planning  {
-    background-color: #9792e4;
+    background-color: var(--main-bg-color);
     padding: 1rem;
 }
 
@@ -55,7 +107,7 @@ header {
     flex-direction: column;
     width: calc(100% - 2rem);
     height: 200px;
-    background-color: #9792e4;
+    background-color: var(--main-bg-color);
     margin: 1rem auto;
 }
 
@@ -68,7 +120,7 @@ header {
 }
 
 #benefits {
-    background-color: #9792e4;
+    background-color: var(--main-bg-color);
 }
 
 #benefits .card{
@@ -87,7 +139,7 @@ header {
 }
 
 #get-started {
-    background-color: #9792e4;
+    background-color: var(--main-bg-color);
 }
 
 .content {
@@ -166,6 +218,14 @@ footer {
 
 /* desktop */
 @media screen and (min-width: 992px) {
+    .navigation-bar li {
+        display: inline-block;
+    }
+
+    .navigation-bar li:last-child {
+        display: none;
+    }
+
     .container {
         width: 80%;
         margin: 0 auto;
