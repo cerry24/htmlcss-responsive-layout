@@ -154,7 +154,6 @@ li>a {
 }
 
 #planning .col-right {
-    /* height: 500px; */
     background-color: var(--tertiary-accent-color);
     border-radius: 3rem;
     color: black;
@@ -262,9 +261,37 @@ li>a {
     background-color: var(--main-bg-color);
 }
 
+#benefits h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--tertiary-accent-color);
+    padding: 3rem 1rem 0 1rem;
+}
+
 #benefits .card{
     background-color: white;
 }
+
+.number {
+    font-size: 4rem;
+    color: var(--main-bg-color);
+}
+
+#benefits h3 {
+    font-size: larger;
+    color: var(--main-bg-color);
+}
+
+.violet-btn {
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--main-bg-color);
+    color: var(--tertiary-accent-color);
+    border-radius: 3rem;
+    padding: .5rem 2.5rem;
+    margin-top: 1.5rem;
+}
+
 
 #about-us .row {
     padding: 1rem;
@@ -353,7 +380,9 @@ footer {
         text-align: left;
     }
 
-
+    #benefits .cards {
+        padding-top: 3rem;
+    }
 
     #benefits .card {
         width: calc(100% / 2 - 1rem);
