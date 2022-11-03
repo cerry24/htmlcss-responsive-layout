@@ -74,7 +74,7 @@ li>a {
 }
 
 .cards{
-    padding: 1rem;
+    padding: 2rem 1rem 3rem 1rem;
 }
 
 .card {
@@ -86,14 +86,15 @@ li>a {
 
 #introduction .card {
     background-color: var(--secondary-bg-color);
+    text-align: center;
 }
 
 #introduction .card:first-child {
+    text-align: left;
     padding-bottom: 0;
 }
 
 #introduction .card h2 {
-    text-align: center;
     color: var(--main-accent-color);
 }
 
@@ -116,6 +117,12 @@ li>a {
     display: block;
     width: 100%;
     margin-top: 1.5rem;
+}
+
+.card-icon {
+    font-size: 6rem;
+    color: var(--main-accent-color);
+    margin-bottom: 1.5rem;
 }
 
 #planning  {
@@ -203,15 +210,11 @@ footer {
     .cards {
         display: flex;
         flex-wrap: wrap;
-        padding: 1rem 0 1rem 1rem;
+        padding: 2rem 0 3rem 1rem;
     }
 
     .card {
         margin: 0 1rem 1rem 0;
-    }
-
-    #introduction .card h2 {
-        text-align: left;
     }
 
     .card img {
